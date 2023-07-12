@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 header{
@@ -25,4 +26,45 @@ header ul{
     width: 38vw;
     justify-content: space-evenly;
     font-size: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+h1{
+    width: 36vw;
+}
+
+button{
+    background-color: #FCA60F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 8vh;
+    width: 19vw;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media (max-width:500px) {
+    header{
+        flex-direction: column;
+    }
+
+    header div{
+        width: 50vw;
+        justify-content: space-around;
+    }
+
+    header ul{
+        width: 80vw;
+    }
+    
+    main figure{
+        display: none;
+    }
 }
